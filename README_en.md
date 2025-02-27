@@ -24,7 +24,7 @@ base64 -w 0 keystore.jks > keystore.jks.base64
 4. Add the following four environment variables:
 ```KEY_ALIAS``` ```KEY_PASSWORD``` ```STORE_FILE``` ```STORE_PASSWORD```  
 The content for ```STORE_FILE``` should be the base64 from step 1, while you should fill in the other environment variables according to your key file.
-5. A push commit will automatically trigger compilation, or you can manually trigger it on the Actions page.
+5. `git tag v1.0.0 && git push origin v1.0.0` will automatically trigger compilation.
 
 ### Compiling via Android Studio
 

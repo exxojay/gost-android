@@ -24,7 +24,7 @@ base64 -w 0 keystore.jks > keystore.jks.base64
 4. 添加以下四个环境变量：
 ```KEY_ALIAS``` ```KEY_PASSWORD``` ```STORE_FILE``` ```STORE_PASSWORD```  
 其中```STORE_FILE```的内容为步骤1的base64，其他环境变量内容请根据您的密钥文件自行填写
-5. Push提交自动触发编译或在Actions页面手动触发
+5. `git tag v1.0.0 && git push origin v1.0.0` 提交自动触发编译
 
 ### 通过Android Studio编译
 

@@ -4,7 +4,7 @@
     "type": "APK",
     "kind": "Directory"
   },
-  "applicationId": "io.github.acedroidx.frp",
+  "applicationId": "org.mingy.gost",
   "variantName": "processReleaseResources",
   "elements": [
     {

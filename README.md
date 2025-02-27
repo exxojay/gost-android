@@ -1,17 +1,17 @@
-# frp-Android
-A frp client for Android  
-一个Android的frpc客户端
+# gost-Android
+A gost client for Android  
+一个Android的gost客户端
 
 简体中文 | [English](README_en.md)
 
 <div style="display:inline-block">
-<img src="./image/image1.png" alt="image1.png" width="200">
-<img src="./image/image2.png" alt="image2.png" width="200">
+<img src="./image/image1.jpg" alt="image1.jpg" width="200">
+<img src="./image/image2.jpg" alt="image2.jpg" width="200">
 </div>
 
 ## 编译方法
 
-如果您想自定义frp内核，可以通过Github Actions或通过Android Studio编译
+如果您想自定义gost内核，可以通过Github Actions或通过Android Studio编译
 
 ### 通过Github Actions编译
 
@@ -32,8 +32,8 @@ base64 -w 0 keystore.jks > keystore.jks.base64
 2. 使用Android Studio进行编译打包
 
 ## 常见问题
-### 项目的frp内核(libfrpc.so)是怎么来的？
-直接从[frp的release](https://github.com/fatedier/frp/releases)里把对应ABI的Linux版本压缩包解压之后重命名frpc为libfrpc.so  
+### 项目的gost内核(libgost.so)是怎么来的？
+直接从[gost](https://github.com/go-gost/gost/releases)里把对应ABI的Linux版本压缩包解压之后重命名gost为libgost.so  
 项目不是在代码里调用so中的方法，而是把so作为一个可执行文件，然后通过shell去执行对应的命令  
 因为Golang的零依赖特性，所以可以直接在Android里通过shell运行可执行文件
 

@@ -38,4 +38,3 @@ dependencyResolutionManagement {
 }
 
 include(":app")
-rootProject.name = "frp"

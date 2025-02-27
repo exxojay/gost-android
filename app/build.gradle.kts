@@ -23,7 +23,7 @@ android {
     }
 
     signingConfigs {
-        create("AceKeystore") {
+        create("keystore") {
             keyAlias = System.getenv("KEY_ALIAS") ?: keystoreProperties["keyAlias"] as String
             keyPassword =
                 System.getenv("KEY_PASSWORD") ?: keystoreProperties["keyPassword"] as String
@@ -37,22 +37,22 @@ android {
     }
 
     defaultConfig {
-        applicationId = "io.github.acedroidx.frp"
+        applicationId = "org.mingy.gost"
         minSdk = 23
         targetSdk = 35
         compileSdk = 35
         versionCode = 8
-        versionName = "1.2.1"
+        versionName = "1.0.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 
-        signingConfig = signingConfigs.getByName("AceKeystore")
+        setProperty("archivesBaseName", "gost")
 
-        buildConfigField("String", "FrpVersion", "\"0.61.1\"")
-        buildConfigField("String", "FrpcFileName", "\"libfrpc.so\"")
-        buildConfigField("String", "FrpsFileName", "\"libfrps.so\"")
-        buildConfigField("String", "FrpcConfigFileName", "\"frpc.toml\"")
-        buildConfigField("String", "FrpsConfigFileName", "\"frps.toml\"")
+        signingConfig = signingConfigs.getByName("keystore")
+
+        buildConfigField("String", "GostVersion", "\"3.0.0\"")
+        buildConfigField("String", "GostFileName", "\"libgost.so\"")
+        buildConfigField("String", "GostConfigFileName", "\"gost.launch\"")
     }
 
     buildTypes {
@@ -67,10 +67,10 @@ android {
                 // Includes a local, custom Proguard rules file
                 "proguard-rules.pro"
             )
-            signingConfig = signingConfigs.getByName("AceKeystore")
+            signingConfig = signingConfigs.getByName("keystore")
         }
         getByName("debug") {
-            signingConfig = signingConfigs.getByName("AceKeystore")
+            signingConfig = signingConfigs.getByName("keystore")
         }
     }
     compileOptions {
@@ -93,7 +93,7 @@ android {
             isUniversalApk = true
         }
     }
-    namespace = "io.github.acedroidx.frp"
+    namespace = "org.mingy.gost"
 }
 
 dependencies {

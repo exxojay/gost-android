@@ -1,17 +1,17 @@
-# frp-Android
-A frp client for Android  
-一个Android的frpc客户端
+# gost-Android
+A gost client for Android  
+一个Android的gost客户端
 
 [简体中文](README.md) | English
 
 <div style="display:inline-block">
-<img src="./image/image1_en.png" alt="image1_en.png" width="200">
-<img src="./image/image2_en.png" alt="image2_en.png" width="200">
+<img src="./image/image1_en.jpg" alt="image1_en.jpg" width="200">
+<img src="./image/image2_en.jpg" alt="image2_en.jpg" width="200">
 </div>
 
 ## Compilation Methods
 
-If you wish to customize the frp kernel, you can compile it via Github Actions or through Android Studio.
+If you wish to customize the gost kernel, you can compile it via Github Actions or through Android Studio.
 
 ### Compiling via Github Actions
 
@@ -32,8 +32,8 @@ The content for ```STORE_FILE``` should be the base64 from step 1, while you sho
 2. Compile and package using Android Studio.
 
 ## FAQs
-### Where does the frp kernel (libfrpc.so) of the project come from?
-It is obtained directly by extracting the corresponding ABI Linux version archive from [frp's release](https://github.com/fatedier/frp/releases), renaming frpc to libfrpc.so.  
+### Where does the gost kernel (libgost.so) of the project come from?
+It is obtained directly by extracting the corresponding ABI Linux version archive from [gost's release](https://github.com/go-gost/gost/releases), renaming gost to libgost.so.  
 The project does not invoke methods from the so file within its code but treats the so as an executable file, executing the corresponding command through shell.  
 Due to Golang's zero-dependency characteristic, the executable file can be run directly through shell in Android.
 

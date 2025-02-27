@@ -1,4 +1,4 @@
-package io.github.acedroidx.frp
+package org.mingy.gost
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("io.github.acedroidx.frp", appContext.packageName)
+        assertEquals("org.mingy.gost", appContext.packageName)
     }
 }

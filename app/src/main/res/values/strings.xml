@@ -1,26 +1,25 @@
 <resources>
-    <string name="app_name" translatable="false">frp</string>
-    <string name="frp_for_android" translatable="false">frp for Android</string>
+    <string name="app_name" translatable="false">Gost</string>
+    <string name="gost_for_android">Gost for Android</string>
     <string name="auto_start_switch">Startup at Boot</string>
     <string name="addConfigButton">Add Config</string>
     <string name="aboutButton">About</string>
-    <string name="frp_log">frp Log</string>
+    <string name="gost_log">Gost Log</string>
     <string name="deleteButton">Clear</string>
     <string name="no_log">No Log</string>
     <string name="saveConfigButton">Save</string>
     <string name="dontSaveConfigButton">Don\'t Save</string>
     <string name="deleteConfigButton">Delete</string>
-    <string name="notification_channel_name">frp Background Service</string>
-    <string name="notification_channel_desc">frp Background Service Notification</string>
-    <string name="service_start_toast">frp Service Started</string>
-    <string name="service_stop_toast">frp Service Stopped</string>
-    <string name="frp_notification_title">frp Background Service</string>
-    <string name="frp_notification_content">%d frp Config Started</string>
+    <string name="notification_channel_name">Gost Background Service</string>
+    <string name="notification_channel_desc">Gost Background Service Notification</string>
+    <string name="service_start_toast">Gost Service Started</string>
+    <string name="service_stop_toast">Gost Service Stopped</string>
+    <string name="gost_notification_title">Gost Background Service</string>
+    <string name="gost_notification_content">%d Gost Config Started</string>
     <string name="copy">Copy</string>
     <string name="copied">Copied</string>
     <string name="no_config">No Config. Click button to add one!</string>
     <string name="rename">Rename</string>
     <string name="confirm">Confirm</string>
     <string name="dismiss">Dismiss</string>
-    <string name="create_frp_select">Select the type of frp to create</string>
 </resources>

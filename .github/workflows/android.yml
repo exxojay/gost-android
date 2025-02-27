@@ -41,5 +41,5 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: frp-Android-artifact
+          name: gost-android-artifact
           path: app/build/outputs/apk/release/*.apk

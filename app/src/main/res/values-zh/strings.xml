@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="gost_for_android">Gost for Android</string>
     <string name="auto_start_switch">开机自启动</string>
     <string name="addConfigButton">添加配置</string>
     <string name="aboutButton">关于</string>

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name" translatable="false">Gost</string>
+    <string name="app_name" translatable="false">GOST</string>
     <string name="gost_for_android">Gost for Android</string>
     <string name="auto_start_switch">Startup at Boot</string>
     <string name="addConfigButton">Add Config</string>
